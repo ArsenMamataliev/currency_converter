@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, {useState, useEffect} from 'react';
 import Select from 'react-select';
 
@@ -29,6 +30,7 @@ export const CurrencyBox = () => {
     setAmountTo(getFromObject);
     }
   getData(amountFrom, selectedOptionFrom, selectedOptionTo);
+// eslint-disable-next-line react-hooks/exhaustive-deps
 },[amountFrom, selectedOptionFrom]);
 
 useEffect(() => {
